@@ -1,0 +1,137 @@
+.projects{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prbox{
+    height:90%;
+    width:100%;
+    background-color: #121212ac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prhead{
+    color: gold;
+    font-size: clamp(2rem, 5vw, 5rem);
+    height:15%;
+    width: 100%;
+    font-family: "Limelight", sans-serif;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+    margin:0 6rem 3rem 0;
+}
+.slider {
+    height: 100%;
+    width: 100%;
+    padding:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.containr{
+    width:100%;
+    height:85%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.angle{
+    height:80px;
+    cursor: pointer;
+    margin: clamp(0.8rem, 4vw, 3rem);
+    font-size: clamp(1.2rem, 4vw, 2rem);
+}
+.card {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 1.5em #CCCCCC);
+}
+.crdimg {
+    width: 100%;
+    height: 90%;
+    object-fit:cover;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    border: 0.1rem solid #CCCCCC;
+}
+@media (min-width: 1181px) {
+    .crdimg {
+        object-fit: contain;
+    }
+}
+
+.title{
+    font-size: clamp(1rem, 4vw, 2rem);
+    color:#CCCCCC;
+}
+@media(max-width:1360px){
+    .title{
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+}
+@media(max-width:1130px){
+    .title{
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
+}
+@media(max-width:620px) {
+    .card {
+        width: 100%;
+        height: 70%;
+    }
+
+    .prhead {
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+        filter: none;
+    }
+}
+.cont {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 70vh;
+    transition: transform 0.5s ease-in-out;
+}
+.details{
+    height:20%;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+.title:hover{
+    color:gold;
+    filter: drop-shadow(0 0 0.5em gold);
+}
+.prtitle{
+    font-size: clamp(0.9rem, 3vw, 2rem);
+}

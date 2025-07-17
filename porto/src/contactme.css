@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contactme {
+  height:90vh;
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: #121212ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    height: 90%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.git {
+  font-size: clamp(2rem, 7vw, 5rem);
+  width:100%;
+  color: gold;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Limelight";
+  margin-bottom: 2rem;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-row .col {
+    flex: 1;
+  }
+}
+
+/* Inputs & Textarea */
+.form-control {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+/* Submit Button */
+.btn {
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  background-color: gold;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #e6c200;
+  color:black;
+}

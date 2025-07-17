@@ -1,0 +1,48 @@
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.marquee1, .marquee2, .marquee3 {
+    width: 100vw;
+    height: 3.5rem;
+    background-color: #121212ac;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee-text {
+    color: #CCCCCC;
+    animation: marquee-scroll 10s ease-in-out infinite;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    display: flex;
+    width: 100%;
+    animation: marquee-scroll 10s ease-in-out infinite alternate;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 850px){
+    .marquee-text{
+        font-size: 0.8rem;
+    }
+}

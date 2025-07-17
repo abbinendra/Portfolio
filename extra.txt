@@ -1,0 +1,15 @@
+{/* <video autoPlay loop muted playsInline id="bg-video">
+      <source src="/assets/videos/temp.mp4" type="video/mp4" />
+    </video>
+
+    <div className="content">
+      <h1 className="wlcmmsg">Abhinendra</h1>
+    </div> */}
+
+
+    fonts:-
+    orbitron
+    audiowide
+    exo
+    michroma *
+    oxanium semi bold 600

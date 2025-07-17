@@ -1,0 +1,34 @@
+.icons {
+    bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    width:45%;
+  }
+  
+  .icon {
+    background-color: #121212ac;
+    color: gold;
+    padding:8px;
+    border-radius: 1rem;
+    font-size: 60px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 850px){
+    .icon{
+      font-size: 40px;
+      border-radius: 10px;
+      padding: 2px;
+    }
+  }
+  @media (max-width: 460px){
+    .icon{
+      font-size: 25px;
+    }
+  }

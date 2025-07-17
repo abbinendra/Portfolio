@@ -1,0 +1,201 @@
+body {
+  cursor: none;
+}
+button,
+a,
+input,
+textarea,
+select,
+label {
+  cursor: none !important;
+}
+
+.custom-cursor-glow {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 9999;
+  background: url('./assets/cursor.png') no-repeat center;
+  background-size: contain;
+  filter: drop-shadow(0 0 5px gold);
+}
+.all{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.firstpage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.port{
+  font-size: 3rem;
+}
+.myname{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: clamp(1.5rem, 2vw, 2.8rem);
+  margin-left: 0.4rem;
+  padding:0.5rem;
+  border-radius: 1.2rem;
+}
+.welcome{
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+}
+.maintxt1 {
+  color: #CCCCCC;
+  white-space: nowrap;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 8rem;
+}
+.maintxt {
+  font-size: clamp(2rem, 6vw, 6rem);
+  color: gold;
+  white-space: nowrap;
+  font-weight: bolder;
+  animation: typing 2s steps(9, end) forwards, blink 0.6s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border-right: 2.5px solid #ffffff;
+  font-family: "Michroma";
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  width: 0;
+  max-width: 100vw;
+}
+
+.done-typing {
+  border-right: none;
+  animation: none;
+  width: auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 5.8ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+button {
+  color:#CCCCCC;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  color: gold;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.Headers {
+  background-color: #121212ac;
+  font-family: "Michroma";
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+  height:4rem;
+  border-radius: 1rem;
+  width: 50%;
+  margin-bottom: 0;
+  position: fixed;
+  top: 1.5rem;
+  z-index: 1000;
+}
+@media (max-width: 1350px) {
+  button {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 850px) {
+  button {
+    font-size: 0.55rem;
+    padding:0px;
+  }
+  .Headers{
+    padding:0.6rem;
+    top:2.5rem;
+    width:70%;
+    height:2.5rem;
+  }
+  .Headers.uncollapsed {
+    height:2.5rem;
+  }
+  .maintxt1{
+    align-items: center;
+    justify-content: center;
+    background-color: #121212ac;
+    padding:1rem 2rem 1rem 2rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+  @media (max-width: 460px){
+    .maintxt1{
+      border-radius: 1rem;
+      padding:1rem;
+    }
+    .myname{
+      font-size: 1rem;
+    }
+  }
+.Headers.collapsed {
+  height: 1rem;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  background-color: gold;
+  box-shadow: 0 0 10px gold;
+  text-decoration:transparent;
+}
+
+.Headers.collapsed>button{
+  height:auto;
+  color:transparent;
+}
+.Headers.uncollapsed>button{
+  color:#CCCCCC;
+}
+.Headers.uncollapsed>button:hover{
+  color:gold;
+}
+.Headers.collapsed:hover {
+  height: 1rem;
+  padding: 1.5rem;
+  background-color: #121212ac;
+  box-shadow: none;
+}

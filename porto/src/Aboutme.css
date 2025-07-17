@@ -1,0 +1,140 @@
+.aboutme{
+    color:rgb(0, 0, 0);
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notxt{
+  font-size:clamp(0.7rem, 2vw, 1.5rem);
+  font-family:"Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abmbox{
+    height:90%;
+    width:88%;
+    background-color: #121212ac;
+    border-radius: 40px;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding:4rem;
+}
+.abmhead{
+    color: gold;
+    font-size: clamp(2rem, 6vw, 5rem);
+    font-family: "Limelight", sans-serif;
+}
+.abmtxt{
+    color: white;
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+}
+.lugafont{
+    font-family:"Lexend Deca", sans-serif;
+    margin-top: clamp(0.5rem, 3vh, 1.5rem);
+}
+.highlighter{
+  font-family: inherit;
+  color:black;
+  background-color: white;
+  border-radius:8px ;
+  padding:0.5px 6px 0.5px 6px;
+}
+.abmgrphics{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    margin-top: clamp(1rem, 4vh, 4rem);
+    gap:1rem;
+}
+.ambprgrs{
+    color:white;
+    width:80%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid white;
+}
+.pg{
+    font-family:"Lexend Deca", sans-serif;
+    font-size: clamp(0.8rem, 2.5vw, 1.3rem);
+}
+.abmpoints{
+    width:20%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.progress {
+  margin-top: 1rem;
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: clamp(1.2rem, 4vh, 2rem);
+  width: clamp(7rem, 30vw, 30rem);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.progress-value {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 1rem;
+  background: gold;
+  width: 0;
+  height: clamp(1.2rem, 4vh, 2rem);
+}
+
+.progress-value1 {
+  animation: load80 5s forwards;
+}
+
+.progress-value2 {
+  animation: load90 5s forwards;
+}
+
+.progress-value3 {
+  animation: load65 5s forwards;
+}
+
+@keyframes load80 {
+  from { width: 0; }
+  to   { width: 80%; }
+}
+
+@keyframes load90 {
+  from { width: 0; }
+  to   { width: 90%; }
+}
+
+@keyframes load65 {
+  from { width: 0; }
+  to   { width: 75%; }
+}
+
+.abmno{
+    color: gold;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+.abmonotxt{
+    color:white;
+    font-family:"Lexend Deca", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
